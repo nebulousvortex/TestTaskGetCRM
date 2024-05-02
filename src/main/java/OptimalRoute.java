@@ -27,7 +27,7 @@ public class OptimalRoute {
         attractions.add(new Attraction("Музей современного искусства Эрарта", 7, 16));
 
         // Сортировка по коэффициенту ценности
-        Collections.sort(attractions, (a1, a2) -> Double.compare(a2.getValueCoefficient(), a1.getValueCoefficient()));
+        attractions.sort((a1, a2) -> Double.compare(a2.getValueCoefficient(), a1.getValueCoefficient()));
 
         // Оставшееся время и накопленная ценность
         double remainingTime = 48 - 2 * 8;
